@@ -4,7 +4,7 @@ brew install entr autojump watch tree fpp the_silver_searcher
 
 git clone git://github.com/ndbroadbent/scm_breeze.git ~/.scm_breeze
 ~/.scm_breeze/install.sh
-source ~/.bashrc
+source ~/.zshrc'
 
 gem install lunchy
 

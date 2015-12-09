@@ -1,1 +1,3 @@
 set guifont=Monaco:h12
+
+nnoremap <D-e> :CtrlPMRU<cr>

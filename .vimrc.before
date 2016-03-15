@@ -1,1 +1,2 @@
 call janus#disable_plugin('vimwiki')
+set shell=/bin/sh

@@ -1,5 +1,14 @@
-set guifont=Monaco:h12
+colorscheme solarized
+set guifont=Monaco:h14
 
-nnoremap <D-e> :CtrlPMRU<cr>
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
 
-ShowWhiteToggle
+set showtabline=2
+
+macmenu &Edit.Find.Find\.\.\. key=<nop>
+nmap <D-f> :Ack<space>
+xnoremap <D-F> y:Ack <C-r>=fnameescape(@")<CR><CR>
+noremap <D-r> :Ack <cword><cr>

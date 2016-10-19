@@ -28,6 +28,27 @@ function resizeAndCentre(widthRatio, heightRatio){
   }
 }
 
+function resizeAndCentreSplit(widthRatio, heightRatio, isLeft){
+  var focused = Window.focused();
+
+  if(focused){
+    var size;
+    var screen = Screen.main().frame();
+
+    size = {
+      width: screen.width * widthRatio,
+      height: screen.height * heightRatio,
+    };
+
+    focused.setTopLeft({
+      x: screen.width / 4 + (isLeft ? -1 : 1) * size.width / 2,
+      y: screen.height / 2 - size.height / 2
+    });
+
+    focused.setSize(size);
+  }
+}
+
 Key.on('m', [ 'cmd', 'alt' ], function(){
   var widthRatio = 0.5;
   var heightRatio = 0.48;
@@ -57,29 +78,17 @@ Key.on('l', [ 'cmd', 'alt' ], function () {
 });
 
 Key.on('j', [ 'cmd', 'shift' ], function () {
-    var app = App.focused();
-    var allWindows = app.windows();
-    var newWindowToFocus = allWindows[allWindows.length - 1];
+  var ratio = 0.8;
+  var heightRatio = ratio;
+  var widthRatio = 1.0 / 2 * ratio;
 
-    if(newWindowToFocus.isMinimised()){
-      newWindowToFocus.unminimise();
-    }
-
-    newWindowToFocus.focus();
-  }
-);
+  resizeAndCentreSplit(widthRatio, heightRatio, true);
+});
 
 Key.on('k', [ 'cmd', 'shift' ], function () {
-    var app = App.focused();
-    var allWindows = app.windows();
-    var newWindowToFocus = allWindows[2];
+  var ratio = 0.8;
+  var heightRatio = ratio;
+  var widthRatio = 1.0 / 2 * ratio;
 
-    if(newWindowToFocus){
-      if(newWindowToFocus.isMinimised()){
-        newWindowToFocus.unminimise();
-      }
-
-      newWindowToFocus.focus();
-    }
-  }
-);
+  resizeAndCentreSplit(widthRatio, heightRatio, false);
+});

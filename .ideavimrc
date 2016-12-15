@@ -1,2 +1,5 @@
 set surround
 set hls
+
+nnoremap [ :action MethodUp<cr>
+nnoremap ] :action MethodDown<cr>

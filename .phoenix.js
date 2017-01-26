@@ -28,6 +28,7 @@ function resizeAndCentre(widthRatio, heightRatio){
   }
 }
 
+
 function resizeAndCentreSplit(widthRatio, heightRatio, isLeft){
   var focused = Window.focused();
 
@@ -49,12 +50,14 @@ function resizeAndCentreSplit(widthRatio, heightRatio, isLeft){
   }
 }
 
+
 Key.on('m', [ 'cmd', 'alt' ], function(){
   var widthRatio = 0.5;
   var heightRatio = 0.48;
 
   resizeAndCentre(widthRatio, heightRatio);
 });
+
 
 Key.on('c', [ 'cmd', 'alt' ], function(){
   var widthRatio = 0.55;
@@ -63,12 +66,14 @@ Key.on('c', [ 'cmd', 'alt' ], function(){
   resizeAndCentre(widthRatio, heightRatio);
 });
 
+
 Key.on('k', [ 'cmd', 'alt' ], function(){
   var widthRatio = 0.6;
   var heightRatio = 0.65;
 
   resizeAndCentre(widthRatio, heightRatio);
 });
+
 
 Key.on('l', [ 'cmd', 'alt' ], function () {
   var widthRatio = 0.70;
@@ -77,6 +82,7 @@ Key.on('l', [ 'cmd', 'alt' ], function () {
   resizeAndCentre(widthRatio, heightRatio);
 });
 
+
 Key.on('j', [ 'cmd', 'shift' ], function () {
   var ratio = 0.8;
   var heightRatio = ratio;
@@ -84,6 +90,7 @@ Key.on('j', [ 'cmd', 'shift' ], function () {
 
   resizeAndCentreSplit(widthRatio, heightRatio, true);
 });
+
 
 Key.on('k', [ 'cmd', 'shift' ], function () {
   var ratio = 0.8;

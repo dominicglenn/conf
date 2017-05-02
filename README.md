@@ -7,3 +7,4 @@
 
 * https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized
 * https://gist.github.com/agnoster/3712874
+* http://tracesof.net/uebersicht/

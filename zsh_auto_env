@@ -1,0 +1,26 @@
+function workon_cwd {
+  GIT_DIR=`git rev-parse --git-dir 2> /dev/null`
+
+  if [ $? -eq 0 ]; then
+    if [[ `pip -V` == *"/Library/"* ]]; then
+      if [ -d "env" ]; then
+        source env/bin/activate
+        export CD_VIRTUAL_ENV="1"
+      fi
+    fi
+  elif [ $CD_VIRTUAL_ENV ]; then
+    deactivate
+    unset CD_VIRTUAL_ENV
+  fi
+}
+
+function venv_cd {
+  cd "$@" && workon_cwd
+}
+
+function up_dir {
+  cd .. && workon_cwd
+}
+
+alias cd="venv_cd"
+alias ..="up_dir"

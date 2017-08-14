@@ -3,3 +3,5 @@ alias pi="pip install -r requirements.txt"
 alias zs="vim ~/.zshrc; source ~/.zshrc"
 
 plugins=(git)
+
+alias screensaver="pkill -9 -f ScreenSaverEngine; /System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background </dev/null &>/dev/null &"

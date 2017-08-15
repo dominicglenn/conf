@@ -7,5 +7,9 @@
 
 * https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized
 * https://gist.github.com/agnoster/3712874
+
+
+## Background
 * https://github.com/JohnCoates/Aerial
-* http://www.bernhard-baehr.de/
+
+https://github.com/MichaelDimmitt/Aerial_Desktop or http://www.bernhard-baehr.de/

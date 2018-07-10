@@ -8,6 +8,8 @@
 * https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized
 * https://gist.github.com/agnoster/3712874
 
+* https://www.brow.sh/downloads/
+
 
 ## Background:
 * https://github.com/JohnCoates/Aerial

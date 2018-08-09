@@ -1,7 +1,7 @@
 #!/usr/local/bin bash
 
 brew cask install phoenix
-brew install entr autojump watch tree fpp the_silver_searcher jq jid
+brew install entr autojump watch tree fpp the_silver_searcher jq jid tig
 
 git clone git://github.com/ndbroadbent/scm_breeze.git ~/.scm_breeze
 ~/.scm_breeze/install.sh

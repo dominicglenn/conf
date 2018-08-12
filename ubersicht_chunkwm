@@ -1,4 +1,4 @@
-command: "echo \"$(chunkc tiling::query --desktop id)$(chunkc tiling::query --desktop mode|cut -c1-1)\""
+command: "echo \"\$(chunkc tiling::query --desktop windows|wc -l)/$(chunkc tiling::query --desktop id)$(chunkc tiling::query --desktop mode|cut -c1-1)\""
 
 refreshFrequency: 100
 

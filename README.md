@@ -7,8 +7,7 @@
 
 * https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized
 * https://gist.github.com/agnoster/3712874
-
-* https://www.brow.sh/downloads/
+* https://github.com/tekezo/Karabiner-Elements
 
 
 ## Background:

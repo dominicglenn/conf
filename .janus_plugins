@@ -1,3 +1,0 @@
-mkdir -p ~/.janus
-cd ~/.janus
-git clone https://github.com/chrisbra/vim-show-whitespace.git

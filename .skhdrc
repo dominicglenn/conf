@@ -19,10 +19,10 @@ alt - p : chunkc tiling::window --focus prev
 alt - n : chunkc tiling::window --focus next
 
 # move focused window
-shift + alt - h : chunkc tiling::window --warp west
-shift + alt - j : chunkc tiling::window --warp south
-shift + alt - k : chunkc tiling::window --warp north
-shift + alt - l : chunkc tiling::window --warp east
+cmd + alt - h : chunkc tiling::window --warp west
+cmd + alt - j : chunkc tiling::window --warp south
+cmd + alt - k : chunkc tiling::window --warp north
+cmd + alt - l : chunkc tiling::window --warp east
 
 alt - r : chunkc tiling::desktop --rotate 90
 

@@ -26,6 +26,12 @@ cmd + alt - l : chunkc tiling::window --warp east
 
 alt - r : chunkc tiling::desktop --rotate 90
 
+# toggle window parent zoom
+alt - y : chunkc tiling::window --toggle parent
+
+# toggle window fullscreen
+alt - u : chunkc tiling::window --toggle fullscreen
+
 # move focused container to workspace
 cmd + alt - m : chunkc tiling::window --send-to-desktop $(chunkc get _last_active_desktop)
 cmd + alt - 1 : chunkc tiling::window --send-to-desktop 1

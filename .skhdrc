@@ -1,9 +1,9 @@
 # change focus between tiling / floating windows
 shift + alt - space : chunkc tiling::window --toggle float
-#
+
 # change layout of desktop
-alt - e : chunkc tiling::desktop --layout bsp
-alt - s : chunkc tiling::desktop --layout monocle
+alt - e : current=$(chunkc tiling::query --desktop mode);\
+            [ "$current" = "bsp" ] && chunkc tiling::desktop --layout monocle || chunkc tiling::desktop --layout bsp
 alt - a : chunkc tiling::desktop --layout float
 
 # kill focused window
@@ -43,8 +43,9 @@ cmd + alt - 6 : chunkc tiling::window --send-to-desktop 6
 
 # fast focus desktop
 alt - x : chunkc tiling::desktop --focus $(chunkc get _last_active_desktop)
-alt - d : chunkc tiling::desktop --focus prev
-alt - f : chunkc tiling::desktop --focus next
+alt - f : chunkc tiling::desktop --focus $(chunkc get _last_active_desktop)
+alt - s : chunkc tiling::desktop --focus prev
+alt - d : chunkc tiling::desktop --focus next
 alt - 1 : chunkc tiling::desktop --focus 1
 alt - 2 : chunkc tiling::desktop --focus 2
 alt - 3 : chunkc tiling::desktop --focus 3

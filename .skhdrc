@@ -34,12 +34,18 @@ alt - u : chunkc tiling::window --toggle fullscreen
 
 # move focused container to workspace
 cmd + alt - m : chunkc tiling::window --send-to-desktop $(chunkc get _last_active_desktop)
-cmd + alt - 1 : chunkc tiling::window --send-to-desktop 1
-cmd + alt - 2 : chunkc tiling::window --send-to-desktop 2
-cmd + alt - 3 : chunkc tiling::window --send-to-desktop 3
-cmd + alt - 4 : chunkc tiling::window --send-to-desktop 4
-cmd + alt - 5 : chunkc tiling::window --send-to-desktop 5
-cmd + alt - 6 : chunkc tiling::window --send-to-desktop 6
+cmd + alt - 1 : chunkc tiling::window --send-to-desktop 1;\
+                chunkc tiling::desktop --focus 1
+cmd + alt - 2 : chunkc tiling::window --send-to-desktop 2;\
+                chunkc tiling::desktop --focus 2
+cmd + alt - 3 : chunkc tiling::window --send-to-desktop 3;\
+                chunkc tiling::desktop --focus 3
+cmd + alt - 4 : chunkc tiling::window --send-to-desktop 4;\
+                chunkc tiling::desktop --focus 4
+cmd + alt - 5 : chunkc tiling::window --send-to-desktop 5;\
+                chunkc tiling::desktop --focus 5
+cmd + alt - 6 : chunkc tiling::window --send-to-desktop 6;\
+                chunkc tiling::desktop --focus 6
 
 # fast focus desktop
 alt - x : chunkc tiling::desktop --focus $(chunkc get _last_active_desktop)

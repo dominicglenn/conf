@@ -1,3 +1,6 @@
+# show/hide desktop
+alt - i : /Applications/Mission\ Control.app/Contents/MacOS/Mission\ Control 1
+
 # change focus between tiling / floating windows
 shift + alt - space : chunkc tiling::window --toggle float
 

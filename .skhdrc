@@ -3,8 +3,8 @@ shift + alt - space : chunkc tiling::window --toggle float
 
 # change layout of desktop
 alt - e : current=$(chunkc tiling::query --desktop mode);\
-            [ "$current" = "bsp" ] && chunkc tiling::desktop --layout monocle || chunkc tiling::desktop --layout bsp
-alt - a : chunkc tiling::desktop --layout float
+            [ "$current" = "monocle" ] && chunkc tiling::desktop --layout bsp || chunkc tiling::desktop --layout monocle
+alt - q : chunkc tiling::desktop --layout float
 
 # kill focused window
 shift + alt - q : chunkc tiling::window --close
@@ -17,6 +17,7 @@ alt - l : chunkc tiling::window --focus east
 
 alt - p : chunkc tiling::window --focus prev
 alt - n : chunkc tiling::window --focus next
+alt - a : chunkc tiling::window --focus next
 
 # move focused window
 cmd + alt - h : chunkc tiling::window --warp west

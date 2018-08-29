@@ -9,6 +9,10 @@ alt - e : current=$(chunkc tiling::query --desktop mode);\
             [ "$current" = "monocle" ] && chunkc tiling::desktop --layout bsp || chunkc tiling::desktop --layout monocle
 alt - q : chunkc tiling::desktop --layout float
 
+# change desktop padding size
+alt - 9 : chunkc tiling::desktop --padding inc
+alt - 0 : chunkc tiling::desktop --padding dec
+
 # kill focused window
 shift + alt - q : chunkc tiling::window --close
 

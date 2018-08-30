@@ -79,22 +79,22 @@ alt - f : chunkc tiling::desktop --focus $(chunkc get _last_active_desktop)
 alt - s : chunkc tiling::desktop --focus prev
 alt - d : chunkc tiling::desktop --focus next
 
-alt - 1 : chunkc tiling::desktop --focus 1
+# alt - 1 : chunkc tiling::desktop --focus 1
 alt - h : chunkc tiling::desktop --focus 1
 
-alt - 2 : chunkc tiling::desktop --focus 2
+# alt - 2 : chunkc tiling::desktop --focus 2
 alt - j : chunkc tiling::desktop --focus 2
 
-alt - 3 : chunkc tiling::desktop --focus 3
+# alt - 3 : chunkc tiling::desktop --focus 3
 alt - k : chunkc tiling::desktop --focus 3
 
-alt - 4 : chunkc tiling::desktop --focus 4
+# alt - 4 : chunkc tiling::desktop --focus 4
 alt - l : chunkc tiling::desktop --focus 4
 
-alt - 5 : chunkc tiling::desktop --focus 5
+# alt - 5 : chunkc tiling::desktop --focus 5
 alt - 0x29 : chunkc tiling::desktop --focus 5
 
-alt - 6 : chunkc tiling::desktop --focus 6
+# alt - 6 : chunkc tiling::desktop --focus 6
 alt - 0x27 : chunkc tiling::desktop --focus 6
 
 # destroy desktop

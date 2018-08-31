@@ -9,6 +9,10 @@ alt - e : current=$(chunkc tiling::query --desktop mode);\
             [ "$current" = "monocle" ] && chunkc tiling::desktop --layout bsp || chunkc tiling::desktop --layout monocle
 alt - q : chunkc tiling::desktop --layout float
 
+# enable/disable mouse follows focus
+alt - z : chunkc set mouse_follows_focus off
+alt - x : chunkc set mouse_follows_focus all
+
 # change desktop padding size
 alt - 0x1B : chunkc tiling::desktop --padding inc
 alt - 0x18 : chunkc tiling::desktop --padding dec
@@ -32,13 +36,14 @@ ctrl + alt - j : chunkc tiling::window --warp south
 ctrl + alt - k : chunkc tiling::window --warp north
 ctrl + alt - l : chunkc tiling::window --warp east
 
+# rotate windows by 90
 alt - r : chunkc tiling::desktop --rotate 90
 
-# toggle window parent zoom
-alt - y : chunkc tiling::window --toggle parent
-
 # toggle window fullscreen
-alt - u : chunkc tiling::window --toggle fullscreen
+alt - u : chunkc tiling::desktop --toggle offset
+
+# toggle window float
+alt - c : chunkc tiling::window --toggle float
 
 # move focused container to workspace
 cmd + alt - m : chunkc tiling::window --send-to-desktop $(chunkc get _last_active_desktop)
@@ -74,7 +79,6 @@ cmd + alt - 0x27 : chunkc tiling::window --send-to-desktop 6;\
                 chunkc tiling::desktop --focus 6
 
 # fast focus desktop
-alt - x : chunkc tiling::desktop --focus $(chunkc get _last_active_desktop)
 alt - f : chunkc tiling::desktop --focus $(chunkc get _last_active_desktop)
 alt - s : chunkc tiling::desktop --focus prev
 alt - d : chunkc tiling::desktop --focus next

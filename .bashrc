@@ -1,3 +1,5 @@
+export EDITOR=vim
+
 # Remember an incredible amount of commands in the history.
 export HISTSIZE=1000000
 export HISTCONTROL=ignoreboth

@@ -24,3 +24,5 @@ set noswapfile
 
 set expandtab
 set smarttab
+
+vnoremap // y/<C-R>"<CR>

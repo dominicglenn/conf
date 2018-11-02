@@ -1,3 +1,4 @@
 set hls
 set multiple-cursors
 set surround
+vnoremap // y/<C-R>"<CR>

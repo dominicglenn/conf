@@ -1,5 +1,8 @@
 export EDITOR=vim
 
+# disable trapping of ctrl-s by terminal, so we can use it in reverse search
+stty -ixon 
+
 # Remember an incredible amount of commands in the history.
 export HISTSIZE=1000000
 export HISTCONTROL=ignoreboth

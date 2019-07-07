@@ -30,4 +30,4 @@ if [ $XDG_CURRENT_DESKTOP="i3" ]; then
     XDG_CURRENT_DESKTOP="Unity"
 fi
 
-setxkbmap -layout gb -variant mac
+setxkbmap -option caps:super,ctrl:swap_lalt_lctl -layout gb -variant mac

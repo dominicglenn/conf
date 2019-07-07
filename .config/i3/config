@@ -170,8 +170,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec light -A 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec light -U 10 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause
@@ -179,11 +179,17 @@ bindsym XF86AudioPause exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+# lock screen
+bindsym $mod+x exec betterlockscreen -l dim
+
 # feh background
 exec_always --no-startup-id feh --randomize --bg-fill ~/backgrounds/*
 
 # disable title bars
 for_window [class=".*"] border pixel 0
+
+# focus fix for pycharm
+for_window [class="^jetbrains-.+"][window_type=dialog] focus
 
 # configure gaps
 gaps inner 10
@@ -191,6 +197,9 @@ gaps outer 20
 
 # start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# network status in bar
+exec --no-startup-id nm-applet --sm-disable
 
 # task switcher - rofi
 bindsym $mod+d \

@@ -193,7 +193,7 @@ for_window [class="^jetbrains-.+"][window_type=dialog] focus
 
 # configure gaps
 gaps inner 10
-gaps outer 20
+gaps outer 10
 
 # start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh

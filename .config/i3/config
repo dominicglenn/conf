@@ -30,7 +30,7 @@ font pango:DejaVu Sans Mono 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec /home/dom/.local/kitty.app/bin/kitty
 
 # kill focused window
 bindsym $mod+Control+q kill
@@ -170,8 +170,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec light -A 2 # increase screen brightness
+bindsym XF86MonBrightnessDown exec light -U 2 # decrease screen brightness
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause
@@ -200,6 +200,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # network status in bar
 exec --no-startup-id nm-applet --sm-disable
+exec --no-startup-id redshift-gtk
 
 # task switcher - rofi
 bindsym $mod+d \

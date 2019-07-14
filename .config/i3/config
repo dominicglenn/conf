@@ -195,6 +195,9 @@ for_window [class="^jetbrains-.+"][window_type=dialog] focus
 gaps inner 10
 gaps outer 10
 
+# start compton
+exec --no-startup-id "compton -b"
+
 # start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 

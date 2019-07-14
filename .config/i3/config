@@ -196,7 +196,7 @@ exec_always --no-startup-id feh --randomize --bg-fill ~/backgrounds/*
 for_window [class=".*"] border pixel 0
 
 # focus fix for pycharm
-for_window [class="^jetbrains-.+"][window_type=dialog] focus
+#for_window [class="^jetbrains-.+"][window_type=dialog] focus
 
 # configure gaps
 gaps inner 10

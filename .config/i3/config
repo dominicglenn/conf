@@ -214,9 +214,7 @@ exec --no-startup-id redshift-gtk
 
 # autolock after 3 minutes
 exec_always xautolock -detectsleep \
-  -time 3 -locker "betterlockscreen -s" \
-  -notify 10 \
-  -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 10 seconds'"
+  -time 3 -locker "betterlockscreen -s"
 
 # task switcher - rofi
 bindsym $mod+d \

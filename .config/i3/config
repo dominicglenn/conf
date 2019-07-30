@@ -214,7 +214,7 @@ exec --no-startup-id redshift-gtk
 
 # autolock after 3 minutes
 exec_always xautolock -detectsleep \
-  -time 3 -locker "betterlockscreen -s"
+  -time 10 -locker "betterlockscreen -s"
 
 # task switcher - rofi
 bindsym $mod+d \

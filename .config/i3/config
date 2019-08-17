@@ -208,13 +208,18 @@ exec --no-startup-id "compton -b"
 # start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+# disable screensaver
+exec_always xset s off
+exec_always xset -dpms
+exec_always xset s noblank
+
 # network status in bar
 exec --no-startup-id nm-applet --sm-disable
 exec --no-startup-id redshift-gtk
 
 # autolock after 3 minutes
-exec_always xautolock -detectsleep \
-  -time 10 -locker "betterlockscreen -s"
+# exec_always xautolock -detectsleep \
+#   -time 10 -locker "betterlockscreen -s"
 
 # task switcher - rofi
 bindsym $mod+d \

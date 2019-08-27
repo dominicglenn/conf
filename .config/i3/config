@@ -209,9 +209,9 @@ exec --no-startup-id "compton -b"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # disable screensaver
-exec_always xset s off
-exec_always xset -dpms
-exec_always xset s noblank
+exec --no-startup-id xset s off
+exec --no-startup-id xset -dpms
+exec --no-startup-id xset s noblank
 
 # network status in bar
 exec --no-startup-id nm-applet --sm-disable

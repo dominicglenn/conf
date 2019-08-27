@@ -211,6 +211,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # disable screensaver
 exec --no-startup-id xset s off
 exec --no-startup-id xset -dpms
+exec --no-startup-id xset dpms 0 0 0
 exec --no-startup-id xset s noblank
 
 # network status in bar

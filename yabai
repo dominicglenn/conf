@@ -1,0 +1,21 @@
+brew install koekeishiya/formulae/yabai
+# install the scripting addition
+sudo yabai --install-sa
+
+# if macOS Big Sur, load the scripting addition manually; follow instructions below to automate on startup
+sudo yabai --load-sa
+
+# start yabai
+brew services start yabai
+
+
+brew install koekeishiya/formulae/skhd
+brew services start skhd
+
+
+----
+* Restart in Recovery Mode (CMD+R)
+* Run `csrutil disable`
+* Reboot
+* Run `sudo chunkwm --install-sa`
+* Run `chunkwm --load-sa`
